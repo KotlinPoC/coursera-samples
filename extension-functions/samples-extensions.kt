@@ -9,3 +9,12 @@ fun main() {
   val cf: Char = "abcdefg".firstChar()
   println("last char $c") 
   println("first char $cf") }
+  
+
+// calling from java 
+// ex in StringExt.kt
+fun String.lastChar() = this.get(this.length -1)
+
+// JavaC.java
+import static STringExt.lastChar;
+char c = lastchar('xyzzztt");
