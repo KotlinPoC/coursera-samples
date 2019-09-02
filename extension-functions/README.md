@@ -20,4 +20,24 @@ There is no kotlin SDK,  it's the JDK + extensions, this means
 
 ## kotlin standard library = java standard library + extensions
 
+#  Calling Extensions & Inheritance
+Extensions are **static** java functions under the hood, so
+extension functions cannot be overriden (as static methods)
+
+An extension cannot hide a member function but CAN overload it. 
+
+# Extensions are **important**
+* purpose to keep classes and interface APIs simple
+* utility convenience methods can be written as extensions
+Ex:  string class from Kotlin lib, string id a collection of chars that can be indexed, so handful of methods:
+* length
+* char by index etc
+everything else is an extension: regex funcs, matching, toupper, to lower etc
+
+## member funcs for intrinsic things and extensions for everything else
+
+other situation: when you don't have control of the class yourself, allows you to extend the APIs of existing libs
+
+
+
 
